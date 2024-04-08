@@ -1,0 +1,23 @@
+<div class="employee-details-container">
+    <h2>Employee Details</h2>
+    <div *ngIf="employee">
+      <div *ngIf="!isEditMode">
+        <p><strong>First Name:</strong> {{ employee.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ employee.last_name }}</p>
+        <p><strong>Email:</strong> {{ employee.email }}</p>
+        <p><strong>Gender:</strong> {{ employee.gender }}</p>
+        <p><strong>Salary:</strong> {{ employee.salary }}</p>
+        <button (click)="toggleEditMode()">Edit</button>
+      </div>
+      <div *ngIf="isEditMode">
+        <p><strong>First Name:</strong> <input type="text" [(ngModel)]="employee.first_name"></p>
+        <p><strong>Last Name:</strong> <input type="text" [(ngModel)]="employee.last_name"></p>
+        <p><strong>Email:</strong> <input type="email" [(ngModel)]="employee.email"></p>
+        <p><strong>Gender:</strong> <input type="text" [(ngModel)]="employee.gender"></p>
+        <p><strong>Salary:</strong> <input type="number" [(ngModel)]="employee.salary"></p>
+        <button (click)="saveChanges()">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+  </div>
+  

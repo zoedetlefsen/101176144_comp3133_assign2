@@ -1,16 +1,17 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component'; // Import AppComponent from its file
+import { LoginComponent } from './login/login.component'; // Import LoginComponent from its file
+import { SignupComponent } from './signup/signup.component'; // Import SignupComponent from its file
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SignupComponent 
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+  
